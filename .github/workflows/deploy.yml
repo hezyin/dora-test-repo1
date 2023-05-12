@@ -1,0 +1,21 @@
+name: My First Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Build images
+      run: echo "Build images"
+      
+    - name: Deploy to production
+      run: echo "Deploy to production"
+
